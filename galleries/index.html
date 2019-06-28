@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html prefix="            og: http://ogp.me/ns# article: http://ogp.me/ns/article#     " vocab="http://ogp.me/ns" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>galleries | YSAR.NET</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%7CUbuntu:300,400,500,700" rel="stylesheet">
+<link href="../assets/icons/foundation-icons.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+<script defer src="../assets/js/misc.js"></script><meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="https://en.ysar.net/galleries/index.html">
+<!--[if lt IE 9]><script src="../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<style type="text/css">
+    .image-block {
+        display: inline-block;
+    }
+    .flowr_row {
+        width: 100%;
+    }
+    </style>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+</head>
+<body>
+
+         
+    <header class="fixed-top"><div class="container">
+        <a href="http://ysar.net">
+            <img class="logo" src="../assets/img/Logo.svg"></a>
+        <div class="subtitle">Python, Yazılım ve Programlama</div>
+    <nav id="menu"><ul>
+<li class="fi-info"><a href="../yasar-arabaci.html">Hakkımda</a></li>
+            <li class="fi-social-github"><a href="https://github.com/yasar11732/">GitHub</a></li>
+            <li class="question"><a href="../soru-cevap.html">Soru-Cevap</a></li>
+            <li class="fi-rss"><a href="../rss.xml">RSS</a></li>
+        </ul></nav>
+</div>
+        
+    </header><main class="main-content"><nav class="breadcrumbs"><ul class="breadcrumb">
+<li>galleries</li>
+</ul></nav><h1>galleries</h1>
+
+<div id="gallery_container"></div>
+
+        </main><script src="../assets/js/flowr.js"></script><script>
+jsonContent = [];
+flowr(document.querySelectorAll("#gallery_container")[0], {
+        data : jsonContent,
+        height : 180*.6,
+        padding: 5,
+        rows: -1,
+        render : function(params) {
+            // Just return a div, string or a dom object, anything works fine
+            var img = document.createElement("img");
+            img.setAttribute('src', params.itemData.url_thumb);
+            img.setAttribute('width', params.width);
+            img.setAttribute('height', params.height);
+            img.setAttribute('alt', params.itemData.title);
+            img.style.maxWidth = '100%';
+            link = document.createElement("a");
+            link.setAttribute('href', params.itemData.url);
+            link.setAttribute('class', 'image-reference');
+            div = document.createElement("div");
+            div.setAttribute('class', 'image-block');
+            div.setAttribute('title', params.itemData.title);
+            div.setAttribute('data-toggle', "tooltip")
+            link.append(img);
+            div.append(link);
+            //div.hover(div.tooltip());
+            return div;
+        },
+        itemWidth : function(data) { return data.size.w; },
+        itemHeight : function(data) { return data.size.h; },
+        complete : function(params) {
+            if( jsonContent.length > params.renderedItems ) {
+                nextRenderList = jsonContent.slice( params.renderedItems );
+            }
+        }
+    });
+    baguetteBox.run('#gallery_container', {
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+</script>
+</body>
+</html>
