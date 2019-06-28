@@ -5,9 +5,9 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1561701826.564
+_modified_time = 1561702938.506
 _enable_loop = True
-_template_filename = u'themes/ysarnet2/templates/base_footer.tmpl'
+_template_filename = u'themes/ysarnet2-en/templates/base_footer.tmpl'
 _template_uri = u'base_footer.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['html_footer']
@@ -45,6 +45,6 @@ def render_html_footer(context):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "line_map": {"34": 3, "35": 4, "36": 5, "37": 7, "38": 7, "39": 8, "40": 8, "46": 40, "16": 0, "21": 2, "22": 13, "28": 3}, "uri": "base_footer.tmpl", "filename": "themes/ysarnet2/templates/base_footer.tmpl"}
+{"source_encoding": "utf-8", "line_map": {"34": 3, "35": 4, "36": 5, "37": 7, "38": 7, "39": 8, "40": 8, "46": 40, "16": 0, "21": 2, "22": 13, "28": 3}, "uri": "base_footer.tmpl", "filename": "themes/ysarnet2-en/templates/base_footer.tmpl"}
 __M_END_METADATA
 """
