@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://en.ysar.net/galleries/rss.xml</loc>
-  <lastmod>2019-06-28T06:02:00Z</lastmod>
+  <lastmod>2019-06-28T06:22:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://en.ysar.net/rss.xml</loc>
@@ -15,6 +15,6 @@
  </sitemap>
  <sitemap>
   <loc>https://en.ysar.net/sitemap.xml</loc>
-  <lastmod>2019-06-28T06:02:00Z</lastmod>
+  <lastmod>2019-06-28T06:22:00Z</lastmod>
  </sitemap>
 </sitemapindex>
